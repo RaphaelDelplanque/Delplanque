@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cours suite Javascript</title>
+</head>
+<body>
+    <h1>Les pourboires</h1>
+        <p>fiche de commande</p>
+
+    <div>
+        <label for="prixCommande">saisir le prix de la commande de 0 à 500</label> : 
+            <input type="text" name="prixCommande" id="prixCommande" required/>
+        <label for="tauxPourboire">saisir le taux du pourboire de 0 à 50%</label> : 
+            <input type="text" name="tauxPourboire" id="tauxPourboire" />
+        <input type="button" onclick="CalculerLePrixCommande()" value="commander"/>
+    </div>
+    <br><br>
+    <div>
+        <textarea name="afficherPrix" id="afficherPrix" cols="100" rows="5" title="le montant de la commande"></textarea>
+    </div>
+    <br><br>
+    <div>
+        <input type="button" onclick="EncoreUneFois()" value="Recommencer"/>
+    </div>
+
+    <script src="MP3_Delplanque_Raphael.js"></script>
+</body>
+</html>
