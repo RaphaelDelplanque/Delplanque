@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cours début Javascript</title>
+</head>
+<body>
+    <h1>Nombre mystere</h1>
+    <p>saisir un chiffre et découvre si tu as deviné</p>
+    <form>
+        <input type="button" onclick="LancerLeJeu()" value="Démarrer le jeu"/>
+    </form>
+    <form>
+        <label for="chiffre">saisir un nombre de 1 à 100</label> : <input type="number" name="chiffre" id="chiffre" required/>
+        <input type="button" onclick="Appel()" value="envoyer"/>
+    </form>
+    <br><br>
+    <form>
+        <textarea id="reponse"></textarea>
+    </form>
+    <script src="NombreMystere.js"></script>
+</body>
+</html>
