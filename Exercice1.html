@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exercice1.css">
+    <title>cours manipuler les DOMs</title>
+</head>
+<body>
+    <h1>la date et l'heure:</h1><br>
+        <div>
+            <textarea id="dateHeure" class="dateHeure">--</textarea>
+            <br>
+            <input type="button" onclick="afficherDate()" value="Afficher la date et l'heure"/>
+        </div>
+    <h1>Changer la couleur d'un paragraphe</h1>
+        <h3 id="paraAChanger">J'aime changer les couleurs!!</h3>
+    <div>
+        <input type="button" onclick="ChangerLaCouleur()" value="changer la couleur"/>
+    </div>
+
+    <br><br><br><br>
+
+    <form>
+        <input type="button" onclick="baisseLeCompteur()" value="faire '-1'"/>
+        <div>
+            <textarea id="compteur" class="compteur" cols="10" rows="10" title="valeur du compteur">10</textarea>
+        </div>
+        <input type="button" onclick="augmenterLeCompteur()" value="faire '+1'"/>
+    </form>
+
+    <script src="Exercice1.js"></script>
+</body>
+</html>
