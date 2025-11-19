@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exercice2.css">
+    <title>cours manipuler les DOMs</title>
+</head>
+<body>
+    <h1>listes et entrées</h1><br>
+    <section>
+        <ol class="liste" id="liste">
+            <li class="liste">pommes</li>
+            <li class="liste">orange</li>
+            <li class="liste">banane</li>
+            <li class="liste">kiwi</li>
+            <li class="liste">poire</li>
+        </ol>
+        <input type="button" onclick="ajouterListe()" value="ajouter"/>
+        <input type="button" onclick="supprimerListe()" value="supprimer un élément"/>
+    </section>
+
+    <br><br><br>
+        <fieldset>
+        <legend>Vos coordonnées</legend> 
+            <p>
+                <label for="nom">Votre nom </label> : <input type="text" name="nom" id="nom" required  />
+            </p>
+            <p>
+                <label for="prenom">Votre prénom </label> : <input type="text" name="prenom" id="prenom" required  />
+            </p>
+            <p>
+                <label for="mail">Votre adresse mail </label> :
+                    <input type="email" name="mail" id="mail" required  />
+            </p>
+        </fieldset>
+        <input type="button" onclick="validerInformation()" value="valider"/>
+    <script src="Exercice2.js"></script>
+</body>
+</html>
